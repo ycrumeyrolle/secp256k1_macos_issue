@@ -33,7 +33,7 @@ jobs:
       DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
       NUGET_XMLDOC_MODE: skip
       NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
-   steps:
+    steps:
       - uses: actions/checkout@master
       - name: Build
         run: dotnet build -c ${{ matrix.configuration }}
