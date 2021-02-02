@@ -39,5 +39,5 @@ jobs:
         run: dotnet build -c ${{ matrix.configuration }}
 
       - name: Test
-        run: dotnet test -c ${{ matrix.configuration }} --no-restore --collect:"XPlat Code Coverage" --settings coverlet.runsettings
+        run: dotnet test -c ${{ matrix.configuration }}
           
